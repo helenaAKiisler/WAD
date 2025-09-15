@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,6 +10,21 @@
     <header>
       <strong>Welcome to your dashboard!</strong>
     </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Your name</li>
+                <li> A date following this format dd/mm/yyyy</li>
+                <li> Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
     <section>
         <h1>Courses</h1>
         <table>
@@ -54,23 +70,22 @@
                 <td>75</td>
               </tr>
             </tfoot>
-        </table>
+        </table> <br>
     </section>
-    <section>
-        <div>
-            <img src="res/images/me.png" width="128" height="128" alt="My picture">
-        </div>
-        <div>
-            <ul>
-                <li>Your name</li>
-                <li> A date following this format dd/mm/yyyy</li>
-                <li> Software Engineering </li>
-            </ul>
-        </div>
-        <div>
-            <strong>2.65</strong>
-        </div>
-    </section>
+    <form>
+          <label for="fname">Course Title: </label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="semesters">Semester: </label><br>
+          <select name="semesters" id="semesters">
+            <option value="fall">Fall</option>
+            <option value="spring">Spring</option>
+          </select><br>
+          <input type="radio" id="virtual" name="attendance" value="virtual">
+          <label for="virtual">Virtual Attendance</label><br>
+          <input type="radio" id="physical" name="attendance" value="physical">
+          <label for="physical">Physical Attendance</label><br>
+          <input type="submit" value="Submit"><br>
+        </form> <br>
     <footer>
         <ul>
             <li>
